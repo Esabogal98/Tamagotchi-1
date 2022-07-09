@@ -63,7 +63,7 @@ class Tamagotchi extends pet {
   //   function to sleep
   sleepTime() {
     this.sleepiness += 1;
-    if (this.sleepiness === 14) {
+    if (this.sleepiness === 10) {
       petDie();
     }
   }
@@ -84,6 +84,8 @@ const ageButton = document.querySelector("#age");
 const sleepButton = document.querySelector("#sleep");
 const lightButton = document.querySelector("#lights");
 
+
+
 // feed button
 
 feedButton.addEventListener(
@@ -101,6 +103,10 @@ feedButton.addEventListener(
   1000
 );
 
+
+// play button
+
+
 playButton.addEventListener(
   "click",
   () => {
@@ -116,6 +122,9 @@ playButton.addEventListener(
   20000
 );
 
+
+
+// Age button                      // GLOW
 ageButton.addEventListener(
   "click",
   () => {
@@ -136,6 +145,12 @@ ageButton.addEventListener(
   10000
 );
 
+
+
+// Sleep button 
+// GLOW
+
+
 sleepButton.addEventListener(
   "click",
   () => {
@@ -144,11 +159,11 @@ sleepButton.addEventListener(
     const sleepStats = document.querySelector("#sleep3");
     sleepStats.innerHTML = tamaPet.sleepiness;
 
-    if (tamaPet.sleepiness > 0 && tamaPet.sleepiness <= 7) {
+    if (tamaPet.sleepiness > 4 && tamaPet.sleepiness <= 8) {
       document.querySelector("#img_to_flip").src = "sleepMonster.png";
 
 
-    } else if (tamaPet.sleepiness >= 7) {
+    } else if (tamaPet.sleepiness >= 8) {
       console.log("change image");
       document.querySelector("#img_to_flip").src="haven1.png";
     }
@@ -156,13 +171,11 @@ sleepButton.addEventListener(
   3000
 );
 
-// Function Lights on/off
-// function darkMode () {  //get the element
 
-//     // set the color
-//     // document.body.style.backgroundImage ="NigthHouse.jpeg";
 
-// }
+
+
+
 
 // Lights On/Off
 
@@ -174,31 +187,24 @@ document.getElementById("lights").addEventListener("click", (event) => {
   console.log("ligthsOn", lightsOn);
 
   if (lightsOn) {
-    // document.style.backgroundImage = "url('pet_house1.jpeg')"
+   
     document.body.style.backgroundImage = "url('pet_house1.jpg')";
     console.log(document.body.style.backgroundImage);
-    // lightImage.body.style.backgroundImage  = "url('darkMood.jpeg')";
-    // lightImage = darkImage
+   
   } else {
-    // darkImage.body.style.backgroundImage = "url('pet_house1.jpg')";
-    // darkImage = lightImage
+    
 
     document.body.style.backgroundImage = "url('darkMood.jpeg')";
     console.log(document.body.style.backgroundImage);
 
-    // document.style.backgroundImage= "url('darkMood.jpeg')"
+    
   }
 
   console.log(event);
 });
 
-// document.getElementById
-// const lightOn = document.querySelector("#lights")
-// lightOn.addEventListener("click", () => {
-//     console.log("Is working");
-//     darkMode();
 
-// })
+
 
 document.getElementById("lights").addEventListener("click", () => {
   document.body.style.backgroundImage = "url('darkMood.jpeg')";
