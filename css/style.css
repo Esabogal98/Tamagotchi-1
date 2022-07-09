@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+
+body{
+background-image: url("../pet_house1.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: double;
+  font-family:'Wallpoet', cursive;
+  flex-wrap: wrap;
+  margin-right: 15%;
+  flex: auto;
+  color:white;
+ text-align: right;
+
+}
+
+.container {
+    display: flex;
+    flex-direction:  column;
+    align-items: end;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Vast Shadow', cursive;
+    color: black;
+    
+
+}
+
+
+
+h3{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'VT323', monospace;
+    
+
+}
+
+.image{
+    position: absolute;
+    left: 20%;
+    top: 80%;
+}
+
+img{
+display: block;
+        height: 200px;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: 8;
+       
+
+
+      }
+
+    
+      
+       @keyframes example { 
+        0%  {left:0px; top:0px;} 
+        25%  {left:100px; top:0px;}
+        50%  {left:100px; top:100px;}
+        75%  {left:0px; top:100px;}
+        100% {left:0px; top:0px;}
+      } 
+      
+      
+
+  .button {
+    background-color: rgb(119, 234, 157); 
+    border: none;
+    color: black;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: bold;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    align-items: center;
+    color: rgb(26, 96, 16);
+
+   
+  }
+
+
+  .button:active {
+    background-color: #99c672;
+    box-shadow: 0 5px rgb(182, 245, 104);
+    transform: translateY(4px);
+
+  }
+
+
+ 
