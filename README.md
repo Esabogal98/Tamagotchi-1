@@ -15,3 +15,6 @@ Make sure to play with pet, also to make it older by pressing the button so you 
 The last thing don't let you pet over sleep or he will go to HAVEN. 
 
 I hope you enjoy my small frist project. :)
+
+Click here to play :
+ https://esabogal98.github.io/Tamagotchi-1/
