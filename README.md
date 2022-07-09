@@ -1,7 +1,7 @@
 # Tamagotchi-1
 My very first project build with HTML, CSS, JS 
-with the ability to name your pet, feed, get older and turn off the lights. Also, you can upgraded your pet when
-is gettin older or sleeping and if you hit 10 in the botton "sleep" you will go to HAVEN.
+with the ability to name your pet, feed, get older and turn off the lights. Also, you can upgraded your pet when you press some buttons. 
+
 
 How to play :
 When you open the link you will see an "alert" to NAME your pet.
